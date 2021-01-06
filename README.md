@@ -22,6 +22,8 @@ smartestchatbot.chat('Hey! How are you!', 'SmartestChatBot', 'CoolOwnerName', 'C
  
 Made by Lebyy_Dev.
 
+### NPM
+- [SmartestChatBot](https://www.npmjs.com/package/smartestchatbot)
 ### Support Discord Servers
 - [Dark Codes](https://discord.com/invite/devs)
 - [Arc Community](https://discord.com/invite/discvent)
