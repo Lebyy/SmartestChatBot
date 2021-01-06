@@ -1,5 +1,6 @@
 const base = 'https://api.affiliateplus.xyz/api'
 const fetch = require("node-fetch");
+const err = require('./Error');
     /**
      * @param {string} message - The message provided 
      * @param {string} name - The name of the bot
