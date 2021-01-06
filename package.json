@@ -1,6 +1,6 @@
 {
-  "name": "smartchatbot",
-  "version": "1.1.0",
+  "name": "smartestchatbot",
+  "version": "1.0.0",
   "description": "A package for using the Affiliate+ API ChatBot Easily!",
   "main": "index.js",
   "scripts": {
@@ -8,11 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Lebyy/SmartChatBot.git"
+    "url": "git+https://github.com/Lebyy/SmartestChatBot.git"
   },
   "keywords": [
     "API",
-    "chatbot",
+    "SmartestChatBot",
+		"chatbot",
+		"smart",
     "reallysmartchatbot",
     "discord.js",
     "web",
@@ -25,9 +27,9 @@
   "author": "Lebyy_Dev",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/Lebyy/SmartChatBot/issues"
+    "url": "https://github.com/Lebyy/SmartestChatBot/issues"
   },
-  "homepage": "https://github.com/Lebyy/SmartChatBot#readme",
+  "homepage": "https://github.com/Lebyy/SmartestChatBot#readme",
   "dependencies": {
     "node-fetch": "^2.6.1"
   }
