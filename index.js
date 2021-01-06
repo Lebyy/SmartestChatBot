@@ -19,9 +19,9 @@ const err = require('./Error');
         if(!user){
         user = "1"
         }
-        if(typeof(name)!= 'string') throw new err(`Expected name to be string, recieved ${typeof(name)}`);
-        if(typeof(owner)!= 'string') throw new err(`Expected owner to be string, recieved ${typeof(owner)}`);
-        if(typeof(user)!= 'string') throw new err(`Expected user id to be string, recieved ${typeof(user)}`);
+        if(typeof(name)!= 'string') throw new err(`Expected name to be string, received ${typeof(name)}`);
+        if(typeof(owner)!= 'string') throw new err(`Expected owner to be string, received ${typeof(owner)}`);
+        if(typeof(user)!= 'string') throw new err(`Expected user id to be string, received ${typeof(user)}`);
         const res = await fetch(`${base}/chatbot?message=${encodeURIComponent(message)}&botname=${encodeURIComponent(name)}&ownername=${encodeURIComponent(owner)}&user=${encodeURIComponent(user)}`,{
         });
         const response = await res.json();
