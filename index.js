@@ -11,7 +11,7 @@ const err = require('./Error');
     const chat = async (message, name, owner, user) => {
         if(!message) throw new err("No message was provided");
         if(!name) {
-        name = "SmartChatBot"
+        name = "SmartestChatBot"
         }
         if(!owner){
         owner = "Lebyy_Dev"
