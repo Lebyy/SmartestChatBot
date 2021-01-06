@@ -25,7 +25,8 @@ Made by Lebyy_Dev.
 ### Support Discord Servers
 - [Dark Codes](https://discord.com/invite/devs)
 - [Arc Community](https://discord.com/invite/discvent)
-### GitHub Repo
+### GitHub Repo's
 - [GitHub Repo](https://github.com/Lebyy/SmartChatBot)
+- [Example Discord Bot GitHub Repo](https://github.com/Lebyy/SmartChatBot-Example)
 
 > Report your Issues in the GitHub Repo Issues or join the Discord Server and directly report your Issue!
