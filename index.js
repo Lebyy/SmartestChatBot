@@ -11,7 +11,7 @@ const err = require('./Error');
      **/
     const chat = async (ops = {message, name:"SmartestChatbot", owner:"Lebyy_Dev", user:'1'}) => {
         if(!ops.message) throw new err("No message was provided");
-        const res = await fetch(`${base}/chatbot?message=${encodeURIComponent(message)}&botname=${encodeURIComponent(name)}&ownername=${encodeURIComponent(owner)}&user=${encodeURIComponent(user)}`,{
+        const res = await fetch(`${base}/chatbot?message=${encodeURIComponent(ops.message)}&botname=${encodeURIComponent(ops.name)}&ownername=${encodeURIComponent(ops.owner)}&user=${encodeURIComponent(ops.user)}`,{
         });
         const response = await res.json();
         return response.message;
@@ -20,4 +20,3 @@ const err = require('./Error');
 module.exports = {
     chat
 };
-
