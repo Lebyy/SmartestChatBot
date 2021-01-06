@@ -12,9 +12,14 @@ This package is just for Entertainment Purpose.
 // Import Package
 const smartestchatbot = require('smartestchatbot')
 
-smartestchatbot.chat('Hey! How are you!', 'SmartestChatBot', 'CoolOwnerName', 'CoolUniqueUserId').then(reply => {
+smartestchatbot.chat({
+    message: "Hey! How are you?",
+    name: "SmartestChatBot",
+    owner: "CoolOwnerName",
+    user: "CoolUniqueUserId"
+}).then(reply => {
   console.log(reply)
-  // The module will reply based on the message! (1st parameter of the chat function!)
+  // The module will reply based on the message! (1st option supplied!)
 })
 ```
 
