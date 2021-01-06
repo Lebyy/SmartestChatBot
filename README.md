@@ -1,6 +1,6 @@
-# ChatBot
+# SmartestChatBot
 
-SmartChatBot is a quick way to easily make your own Chat Bot with Javascript Easily with https://api.affiliateplus.xyz/
+SmartestChatBot is a quick way to easily make your own Chat Bot with Javascript Easily with https://api.affiliateplus.xyz/
 
 This package is just for Entertainment Purpose.
 
@@ -10,9 +10,9 @@ This package is just for Entertainment Purpose.
 **Javascript:**
 ```js
 // Import Package
-const smartchatbot = require('smartchatbot')
+const smartestchatbot = require('smartestchatbot')
 
-smartchatbot.chat('Hey! How are you!', 'ChatBot', 'CoolOwnerName', 'CoolUniqueUserId').then(reply => {
+smartestchatbot.chat('Hey! How are you!', 'SmartestChatBot', 'CoolOwnerName', 'CoolUniqueUserId').then(reply => {
   console.log(reply)
   // The module will reply based on the message! (1st parameter of the chat function!)
 })
@@ -26,7 +26,7 @@ Made by Lebyy_Dev.
 - [Dark Codes](https://discord.com/invite/devs)
 - [Arc Community](https://discord.com/invite/discvent)
 ### GitHub Repo's
-- [GitHub Repo](https://github.com/Lebyy/SmartChatBot)
-- [Example Discord Bot GitHub Repo](https://github.com/Lebyy/SmartChatBot-Example)
+- [GitHub Repo](https://github.com/Lebyy/SmartestChatBot)
+- [Example Discord Bot GitHub Repo](https://github.com/Lebyy/SmartestChatBot-Example)
 
 > Report your Issues in the GitHub Repo Issues or join the Discord Server and directly report your Issue!
