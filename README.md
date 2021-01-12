@@ -24,14 +24,14 @@ Made by Lebyy_Dev.
 
 ### NPM
 - [SmartestChatBot](https://www.npmjs.com/package/smartestchatbot)
+### GitHub Repo's
+- [GitHub Repo](https://github.com/Lebyy/SmartestChatBot)
+- [Example Discord Bot GitHub Repo](https://github.com/Lebyy/SmartestChatBot-Example)
+
+> Report your Issues in the GitHub Repo Issues or join the Discord Server and directly report your Issue!
 ### Support Discord Servers
 <a href="https://discord.gg/anyF4j3MUu"><img src="https://invidget.switchblade.xyz/anyF4j3MUu"/></a>
 <br><br>
 <a href="https://discord.gg/SnjkPDakkM"><img src="https://invidget.switchblade.xyz/SnjkPDakkM"/></a>
 <br><br>
 </div>
-### GitHub Repo's
-- [GitHub Repo](https://github.com/Lebyy/SmartestChatBot)
-- [Example Discord Bot GitHub Repo](https://github.com/Lebyy/SmartestChatBot-Example)
-
-> Report your Issues in the GitHub Repo Issues or join the Discord Server and directly report your Issue!
