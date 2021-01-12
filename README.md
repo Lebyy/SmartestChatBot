@@ -25,8 +25,11 @@ Made by Lebyy_Dev.
 ### NPM
 - [SmartestChatBot](https://www.npmjs.com/package/smartestchatbot)
 ### Support Discord Servers
-- [Dark Codes](https://discord.com/invite/devs)
-- [Arc Community](https://discord.com/invite/discvent)
+<a href="https://discord.gg/anyF4j3MUu"><img src="https://invidget.switchblade.xyz/anyF4j3MUu"/></a>
+<br><br>
+<a href="https://discord.gg/SnjkPDakkM"><img src="https://invidget.switchblade.xyz/SnjkPDakkM"/></a>
+<br><br>
+</div>
 ### GitHub Repo's
 - [GitHub Repo](https://github.com/Lebyy/SmartestChatBot)
 - [Example Discord Bot GitHub Repo](https://github.com/Lebyy/SmartestChatBot-Example)
