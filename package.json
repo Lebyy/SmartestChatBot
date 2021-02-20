@@ -1,7 +1,7 @@
 {
   "name": "smartestchatbot",
-  "version": "1.0.0",
-  "description": "A package for using the Affiliate+ API ChatBot Easily!",
+  "version": "1.0.3",
+  "description": "A very lightweight and simple artificial intelligence chatbot package with multiple language support!",
   "main": "index.js",
   "scripts": {
     "test": "echo \" no test specified\""
@@ -13,8 +13,8 @@
   "keywords": [
     "API",
     "SmartestChatBot",
-		"chatbot",
-		"smart",
+    "chatbot",
+    "smart",
     "reallysmartchatbot",
     "discord.js",
     "web",
@@ -31,6 +31,12 @@
   },
   "homepage": "https://github.com/Lebyy/SmartestChatBot#readme",
   "dependencies": {
-    "node-fetch": "^2.6.1"
+    "md5": "^2.3.0",
+    "node-fetch": "^2.6.1",
+    "superagent": "^6.1.0",
+    "translation-google": "^0.2.1"
+  },
+  "devDependencies": {
+    "better-docs": "^2.3.2"
   }
 }
