@@ -2,7 +2,7 @@ const base = 'https://api.affiliateplus.xyz/api'
 const fetch = require("node-fetch");
 const err = require('./Error');
 const response = require("./response.js");
-const translate = require('translation-google');
+const translate = require('@iamtraction/google-translate');
 /**
  *
  *
@@ -29,16 +29,22 @@ class Client {
 	  }) {
 		if (!ops.message) throw new err("No message was provided");
 		if (typeof ops.message !== "string") throw new err("Message must be a string!");
-		if (typeof ops.name !== "string" || ops.name < 3) throw new err("Bot name must be a string with 3 or more characters!");
-		if (typeof ops.owner !== "string" || ops.owner < 3) throw new err("Owner name must be a string with 3 or more characters!");
-		if (typeof ops.user !== "number") throw new err("User id must be a number!");
+		if (typeof ops.name !== "string") throw new err("Bot name must be a string with 3 or more characters!");
+		if (typeof ops.owner !== "string") throw new err("Owner name must be a string with 3 or more characters!");
 		if (typeof ops.language !== "string") throw new err("Language must be a string!");
+		if(ops.language !== "en" && ops.language !== "English") {
 		let ttt = await translate(ops.message, {to:"en"})
 		ops.message = ttt.text
 		const res = await fetch(`${base}/chatbot?message=${encodeURIComponent(ops.message)}&botname=${encodeURIComponent(ops.name)}&ownername=${encodeURIComponent(ops.owner)}&user=${encodeURIComponent(ops.user)}`, {});
 		const response = await res.json();
 		let translatedtext = await translate(response.message, {to: ops.language})
     return translatedtext.text
+		}
+		if(ops.language === "en" || ops.language === "English") {
+		const res = await fetch(`${base}/chatbot?message=${encodeURIComponent(ops.message)}&botname=${encodeURIComponent(ops.name)}&ownername=${encodeURIComponent(ops.owner)}&user=${encodeURIComponent(ops.user)}`, {});
+		const response = await res.json();
+    return response.message
+		}
 	}
 
 	/**
@@ -53,12 +59,17 @@ class Client {
   if (!ops.message) throw new err("No message was provided");
 	if (typeof ops.message !== "string") throw new err("Message must be a string!");
 	if (typeof ops.language !== "string") throw new err("Language must be a string!");
+	if(ops.language !== "en" && ops.language !== "English"){
 	let ttt = await translate(ops.message, {to:"en"})
 	ops.message = ttt.text
 	let translatedtext = await translate(await response(ops.message), {to: ops.language})
   return translatedtext.text
 	}
+	if(ops.language === "en" || ops.language === "English"){
+	return await response(ops.message)
+	}
 
+}
 }
 
 
