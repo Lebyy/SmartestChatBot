@@ -1,36 +1,39 @@
+<p align="center"><a href="https://nodei.co/npm/smartestchatbot/"><img src="https://nodei.co/npm/smartestchatbot.png"></a></p>
+<p align="center"><img src="https://img.shields.io/npm/v/smartestchatbot?style=for-the-badge"> <img src="https://img.shields.io/github/repo-size/Lebyy/smartestchatbot?style=for-the-badge"> <img src="https://img.shields.io/npm/l/smartestchatbot?style=for-the-badge"> <img src="https://img.shields.io/npm/dt/smartestchatbot?style=for-the-badge"> <img src="https://img.shields.io/github/contributors/Lebyy/smartestchatbot?style=for-the-badge"> <img src="https://img.shields.io/github/package-json/dependency-version/Lebyy/smartestchatbot/superagent?style=for-the-badge"> <a href="https://discord.gg/pndumb6J3t" target="_blank"> <img alt="Discord" src="https://img.shields.io/badge/Chat-Click%20here-7289d9?style=for-the-badge&logo=discord"> </a> <a href="https://smartestchatbot.js.org/"><img src="https://img.shields.io/badge/Documentation-Click%20here-blue?style=for-the-badge" alt="Documentation - https://smartestchatbot.js.org/"/></a></p>
+
 # SmartestChatBot
 
 SmartestChatBot is a quick way to easily make your own Chat Bot which can reply in multiple languages!
 
 This package is just for Entertainment Purpose.
+
 #
-
-# **Enjoying SmartestChatBot?**
-Consider donating: https://www.buymeacoffee.com/lebyydev
-Thanks 😊
-
+### 📚 [Documentation](https://smartestchatbot.js.org)
+### ❔ [Support](https://discord.gg/pndumb6J3t)
+### 📂 [NPM](https://npmjs.com/smartestchatbot)
+### 📝 [Example Discord Bot](https://github.com/Lebyy/SmartestChatBot-Example)
 #
 
 # Quick Example
  
 **Javascript:**
 ```js
-// Import Package
-const smartestchatbot = require('smartestchatbot')
+// Importing The Package
+const smartestchatbot = require('smartestchatbot');
 
-const client = new smartestchatbot.Client()
+const client = new smartestchatbot.Client();
 
 client.chat({message:"Hello, How are you?", name:"SmartestChatbot", owner:"CoolOwnerName", user: Cooluniqueuserid-in-number, language:"CoolLanguage"}).then(reply => {
-console.log(reply)
+console.log(reply);
 // The module will reply based on the message!
-})
+});
 
 // Or you can even try the 2nd chatbot module!
 
 client.cleverchat({message:"Hello, How are you?", language:"CoolLanguage"}).then(reply => {
-console.log(reply)
+console.log(reply);
 // The module will reply based on the message!
-})
+});
 ```
 
 **Typescript supported!
@@ -54,8 +57,8 @@ Example: (Coming Soon!)**
     'ca': 'Catalan',
     'ceb': 'Cebuano',
     'ny': 'Chichewa',
-    'zh-cn': 'Chinese Simplified',
-    'zh-tw': 'Chinese Traditional',
+    'zh-CN': 'Chinese (Simplified)',
+    'zh-TW': 'Chinese (Traditional)',
     'co': 'Corsican',
     'hr': 'Croatian',
     'cs': 'Czech',
@@ -76,6 +79,7 @@ Example: (Coming Soon!)**
     'ht': 'Haitian Creole',
     'ha': 'Hausa',
     'haw': 'Hawaiian',
+    'he': 'Hebrew',
     'iw': 'Hebrew',
     'hi': 'Hindi',
     'hmn': 'Hmong',
@@ -113,7 +117,7 @@ Example: (Coming Soon!)**
     'fa': 'Persian',
     'pl': 'Polish',
     'pt': 'Portuguese',
-    'ma': 'Punjabi',
+    'pa': 'Punjabi',
     'ro': 'Romanian',
     'ru': 'Russian',
     'sm': 'Samoan',
@@ -145,22 +149,20 @@ Example: (Coming Soon!)**
     'yo': 'Yoruba',
     'zu': 'Zulu'
 ```
-
+# **NOTE: Currently SmartestChatBot uses the Google Translate engine to translate the message, Google has heavy rate limits on their api which is currently unknown, recommended language is `en` to avoid rate-limits.**
 
 # Credits
  
 Made by Lebyy_Dev.
 
-### NPM
-- [SmartestChatBot](https://www.npmjs.com/package/smartestchatbot)
-### GitHub Repo's
-- [GitHub Repo](https://github.com/Lebyy/SmartestChatBot)
-- [Example Discord Bot GitHub Repo](https://github.com/Lebyy/SmartestChatBot-Example)
 
-> Report your Issues in the GitHub Repo Issues or join the Discord Server and directly report your Issue!
-### Support Discord Servers
-<a href="https://discord.gg/anyF4j3MUu"><img src="https://invidget.switchblade.xyz/anyF4j3MUu"/></a>
-<br><br>
-<a href="https://discord.gg/SnjkPDakkM"><img src="https://invidget.switchblade.xyz/SnjkPDakkM"/></a>
-<br><br>
-</div>
+# Enjoying Discord-Voice?
+Consider donating! 
+
+<a href="https://www.patreon.com/Lebyy">
+  <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
+</a>
+<a href="https://www.buymeacoffee.com/lebyydev" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
+<a href='https://ko-fi.com/N4N04B26C' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi3.png?v=2' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+
+Thanks 😊

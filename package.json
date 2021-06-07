@@ -1,10 +1,16 @@
 {
   "name": "smartestchatbot",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "description": "A very lightweight and simple artificial intelligence chatbot package with multiple language support!",
   "main": "index.js",
+  "types": "typings/index.d.ts",
+  "files": [
+    "index.js",
+    "typings/"
+  ],
   "scripts": {
-    "test": "echo \" no test specified\""
+    "test": "echo \" no test specified\"",
+    "generate-docs": "node_modules/.bin/jsdoc --configure .jsdoc.json --verbose"
   },
   "repository": {
     "type": "git",
@@ -31,12 +37,11 @@
   },
   "homepage": "https://github.com/Lebyy/SmartestChatBot#readme",
   "dependencies": {
+    "@vitalets/google-translate-api": "^7.0.0",
     "md5": "^2.3.0",
-    "node-fetch": "^2.6.1",
-    "superagent": "^6.1.0",
-    "translation-google": "^0.2.1"
+    "superagent": "^6.1.0"
   },
   "devDependencies": {
-    "better-docs": "^2.3.2"
+    "jsdoc-skyceil": "^2.0.0"
   }
 }
