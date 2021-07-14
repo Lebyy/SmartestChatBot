@@ -41,114 +41,74 @@ Example: (Coming Soon!)**
 #
 
 > # A clean and tidy list of the currently supported languages:
-```
-    'auto': 'Automatic',
-    'af': 'Afrikaans',
-    'sq': 'Albanian',
-    'am': 'Amharic',
-    'ar': 'Arabic',
-    'hy': 'Armenian',
-    'az': 'Azerbaijani',
-    'eu': 'Basque',
-    'be': 'Belarusian',
-    'bn': 'Bengali',
-    'bs': 'Bosnian',
-    'bg': 'Bulgarian',
-    'ca': 'Catalan',
-    'ceb': 'Cebuano',
-    'ny': 'Chichewa',
-    'zh-CN': 'Chinese (Simplified)',
-    'zh-TW': 'Chinese (Traditional)',
-    'co': 'Corsican',
-    'hr': 'Croatian',
-    'cs': 'Czech',
-    'da': 'Danish',
-    'nl': 'Dutch',
-    'en': 'English',
-    'eo': 'Esperanto',
-    'et': 'Estonian',
-    'tl': 'Filipino',
-    'fi': 'Finnish',
-    'fr': 'French',
-    'fy': 'Frisian',
-    'gl': 'Galician',
-    'ka': 'Georgian',
-    'de': 'German',
-    'el': 'Greek',
-    'gu': 'Gujarati',
-    'ht': 'Haitian Creole',
-    'ha': 'Hausa',
-    'haw': 'Hawaiian',
-    'he': 'Hebrew',
-    'iw': 'Hebrew',
-    'hi': 'Hindi',
-    'hmn': 'Hmong',
-    'hu': 'Hungarian',
-    'is': 'Icelandic',
-    'ig': 'Igbo',
-    'id': 'Indonesian',
-    'ga': 'Irish',
-    'it': 'Italian',
-    'ja': 'Japanese',
-    'jw': 'Javanese',
-    'kn': 'Kannada',
-    'kk': 'Kazakh',
-    'km': 'Khmer',
-    'ko': 'Korean',
-    'ku': 'Kurdish (Kurmanji)',
-    'ky': 'Kyrgyz',
-    'lo': 'Lao',
-    'la': 'Latin',
-    'lv': 'Latvian',
-    'lt': 'Lithuanian',
-    'lb': 'Luxembourgish',
-    'mk': 'Macedonian',
-    'mg': 'Malagasy',
-    'ms': 'Malay',
-    'ml': 'Malayalam',
-    'mt': 'Maltese',
-    'mi': 'Maori',
-    'mr': 'Marathi',
-    'mn': 'Mongolian',
-    'my': 'Myanmar (Burmese)',
-    'ne': 'Nepali',
-    'no': 'Norwegian',
-    'ps': 'Pashto',
-    'fa': 'Persian',
-    'pl': 'Polish',
-    'pt': 'Portuguese',
-    'pa': 'Punjabi',
-    'ro': 'Romanian',
-    'ru': 'Russian',
-    'sm': 'Samoan',
-    'gd': 'Scots Gaelic',
-    'sr': 'Serbian',
-    'st': 'Sesotho',
-    'sn': 'Shona',
-    'sd': 'Sindhi',
-    'si': 'Sinhala',
-    'sk': 'Slovak',
-    'sl': 'Slovenian',
-    'so': 'Somali',
-    'es': 'Spanish',
-    'su': 'Sundanese',
-    'sw': 'Swahili',
-    'sv': 'Swedish',
-    'tg': 'Tajik',
-    'ta': 'Tamil',
-    'te': 'Telugu',
-    'th': 'Thai',
-    'tr': 'Turkish',
-    'uk': 'Ukrainian',
-    'ur': 'Urdu',
-    'uz': 'Uzbek',
-    'vi': 'Vietnamese',
-    'cy': 'Welsh',
-    'xh': 'Xhosa',
-    'yi': 'Yiddish',
-    'yo': 'Yoruba',
-    'zu': 'Zulu'
-```
+**Language Name**|**Language Code**
+:-----:|:-----:
+Automatic|auto
+Afrikaans|af
+Irish|ga
+Albanian|sq
+Italian|it
+Arabic|ar
+Japanese|ja
+Azerbaijani|az
+Kannada|kn
+Basque|eu
+Korean|ko
+Bengali|bn
+Latin|la
+Belarusian|be
+Latvian|lv
+Bulgarian|bg
+Lithuanian|lt
+Catalan|ca
+Macedonian|mk
+Chinese Simplified|zh-CN
+Malay|ms
+Chinese Traditional|zh-TW
+Maltese|mt
+Croatian|hr
+Norwegian|no
+Czech|cs
+Persian|fa
+Danish|da
+Polish|pl
+Dutch|nl
+Portuguese|pt
+English|en
+Romanian|ro
+Esperanto|eo
+Russian|ru
+Estonian|et
+Serbian|sr
+Filipino|tl
+Slovak|sk
+Finnish|fi
+Slovenian|sl
+French|fr
+Spanish|es
+Galician|gl
+Swahili|sw
+Georgian|ka
+Swedish|sv
+German|de
+Tamil|ta
+Greek|el
+Telugu|te
+Gujarati|gu
+Thai|th
+Haitian Creole|ht
+Turkish|tr
+Hebrew|iw
+Ukrainian|uk
+Hindi|hi
+Urdu|ur
+Hungarian|hu
+Vietnamese|vi
+Icelandic|is
+Welsh|cy
+Indonesian|id
+Yiddish|yi
+
 # **NOTE: Currently SmartestChatBot uses the Google Translate engine to translate the message, Google has heavy rate limits on their api which is currently unknown, recommended language is `en` to avoid rate-limits.**
 
 # Credits
@@ -156,7 +116,7 @@ Example: (Coming Soon!)**
 Made by Lebyy_Dev.
 
 
-# Enjoying Discord-Voice?
+# Enjoying SmartestChatBot?
 Consider donating! 
 
 <a href="https://www.patreon.com/Lebyy">
