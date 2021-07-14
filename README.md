@@ -109,8 +109,6 @@ Welsh|cy
 Indonesian|id
 Yiddish|yi
 
-# **NOTE: Currently SmartestChatBot uses the Google Translate engine to translate the message, Google has heavy rate limits on their api which is currently unknown, recommended language is `en` to avoid rate-limits.**
-
 # Credits
  
 Made by Lebyy_Dev.
