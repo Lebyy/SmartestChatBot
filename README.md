@@ -1,5 +1,5 @@
 <p align="center"><a href="https://nodei.co/npm/smartestchatbot/"><img src="https://nodei.co/npm/smartestchatbot.png"></a></p>
-<p align="center"><img src="https://img.shields.io/npm/v/smartestchatbot?style=for-the-badge"> <img src="https://img.shields.io/github/repo-size/Lebyy/smartestchatbot?style=for-the-badge"> <img src="https://img.shields.io/npm/l/smartestchatbot?style=for-the-badge"> <img src="https://img.shields.io/npm/dt/smartestchatbot?style=for-the-badge"> <img src="https://img.shields.io/github/contributors/Lebyy/smartestchatbot?style=for-the-badge"> <img src="https://img.shields.io/github/package-json/dependency-version/Lebyy/smartestchatbot/superagent?style=for-the-badge"> <a href="https://discord.gg/pndumb6J3t" target="_blank"> <img alt="Discord" src="https://img.shields.io/badge/Chat-Click%20here-7289d9?style=for-the-badge&logo=discord"> </a> <a href="https://smartestchatbot.js.org/"><img src="https://img.shields.io/badge/Documentation-Click%20here-blue?style=for-the-badge" alt="Documentation - https://smartestchatbot.js.org/"/></a></p>
+<p align="center"><img src="https://img.shields.io/npm/v/smartestchatbot?style=for-the-badge"> <img src="https://img.shields.io/github/repo-size/Lebyy/smartestchatbot?style=for-the-badge"> <img src="https://img.shields.io/npm/l/smartestchatbot?style=for-the-badge"> <img src="https://img.shields.io/npm/dt/smartestchatbot?style=for-the-badge"> <img src="https://img.shields.io/github/contributors/Lebyy/smartestchatbot?style=for-the-badge"> <img src="https://img.shields.io/github/package-json/dependency-version/Lebyy/smartestchatbot/superagent?style=for-the-badge"> <a href="https://discord.gg/pndumb6J3t" target="_blank"> <img alt="Discord" src="https://img.shields.io/badge/Chat-Click%20here-7289d9?style=for-the-badge&logo=discord"> </a></p>
 
 # SmartestChatBot
 
@@ -8,7 +8,6 @@ SmartestChatBot is a quick way to easily make your own Chat Bot which can reply 
 This package is just for Entertainment Purpose.
 
 #
-### 📚 [Documentation](https://smartestchatbot.js.org)
 ### ❔ [Support](https://discord.gg/pndumb6J3t)
 ### 📂 [NPM](https://npmjs.com/smartestchatbot)
 ### 📝 [Example Discord Bot](https://github.com/Lebyy/SmartestChatBot-Example)
@@ -24,13 +23,6 @@ const smartestchatbot = require('smartestchatbot');
 const client = new smartestchatbot.Client();
 
 client.chat({message:"Hello, How are you?", name:"SmartestChatbot", owner:"CoolOwnerName", user: Cooluniqueuserid-in-number, language:"CoolLanguage"}).then(reply => {
-console.log(reply);
-// The module will reply based on the message!
-});
-
-// Or you can even try the 2nd chatbot module!
-
-client.cleverchat({message:"Hello, How are you?", language:"CoolLanguage"}).then(reply => {
 console.log(reply);
 // The module will reply based on the message!
 });
@@ -112,6 +104,8 @@ Yiddish|yi
 # Credits
  
 Made by Lebyy_Dev.
+<br>
+[Fighter for Justice 2.0#6693](https://translate-api.ml) For making the translations possible.
 
 
 # Enjoying SmartestChatBot?
