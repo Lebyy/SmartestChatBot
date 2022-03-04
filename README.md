@@ -22,7 +22,7 @@ const smartestchatbot = require('smartestchatbot');
 
 const client = new smartestchatbot.Client();
 
-client.chat({message:"Hello, How are you?", name:"SmartestChatbot", owner:"CoolOwnerName", user: Cooluniqueuserid-in-number, language:"CoolLanguage"}).then(reply => {
+client.chat({message:"Hello, How are you?", name:"SmartestChatbot", owner:"CoolOwnerName", user: CoolUniqueUserId-In-NumberType}, "CoolLanguage").then(reply => {
 console.log(reply);
 // The module will reply based on the message!
 });
@@ -32,88 +32,125 @@ console.log(reply);
 Example: (Coming Soon!)**
 #
 
-> # A clean and tidy list of the currently supported languages:
+> # A clean and tidy list of the currently supported languages: 
 **Language Name**|**Language Code**
 :-----:|:-----:
 Automatic|auto
 Afrikaans|af
-Irish|ga
 Albanian|sq
-Italian|it
+Amharic|am
 Arabic|ar
-Japanese|ja
+Armenian|hy
 Azerbaijani|az
-Kannada|kn
 Basque|eu
-Korean|ko
-Bengali|bn
-Latin|la
 Belarusian|be
-Latvian|lv
+Bengali|bn
+Bosnian|bs
 Bulgarian|bg
-Lithuanian|lt
 Catalan|ca
-Macedonian|mk
-Chinese Simplified|zh-CN
-Malay|ms
-Chinese Traditional|zh-TW
-Maltese|mt
+Cebuano|ceb
+Chichewa|ny
+Chinese (Simplified)|zh
+Chinese (Simplified)|zh-cn
+Chinese (Traditional)|zh-tw
+Corsican|co
 Croatian|hr
-Norwegian|no
 Czech|cs
-Persian|fa
 Danish|da
-Polish|pl
 Dutch|nl
-Portuguese|pt
 English|en
-Romanian|ro
 Esperanto|eo
-Russian|ru
 Estonian|et
-Serbian|sr
 Filipino|tl
-Slovak|sk
 Finnish|fi
-Slovenian|sl
 French|fr
-Spanish|es
+Frisian|fy
 Galician|gl
-Swahili|sw
 Georgian|ka
-Swedish|sv
 German|de
-Tamil|ta
 Greek|el
-Telugu|te
 Gujarati|gu
-Thai|th
 Haitian Creole|ht
-Turkish|tr
+Hausa|ha
+Hawaiian|haw
+Hebrew|he
 Hebrew|iw
-Ukrainian|uk
 Hindi|hi
-Urdu|ur
+Hmong|hmn
 Hungarian|hu
-Vietnamese|vi
 Icelandic|is
-Welsh|cy
+Igbo|ig
 Indonesian|id
+Irish|ga
+Italian|it
+Japanese|ja
+Javanese|jw
+Kannada|kn
+Kazakh|kk
+Khmer|km
+Korean|ko
+Kurdish (Kurmanji)|ku
+Kyrgyz|ky
+Lao|lo
+Latin|la
+Latvian|lv
+Lithuanian|lt
+Luxembourgish|lb
+Macedonian|mk
+Malagasy|mg
+Malay|ms
+Malayalam|ml
+Maltese|mt
+Maori|mi
+Marathi|mr
+Mongolian|mn
+Myanmar (Burmese)|my
+Nepali|ne
+Norwegian|no
+Pashto|ps
+Persian|fa
+Polish|pl
+Portuguese|pt
+Punjabi|pa
+Romanian|ro
+Russian|ru
+Samoan|sm
+Scots Gaelic|gd
+Serbian|sr
+Sesotho|st
+Shona|sn
+Sindhi|sd
+Sinhala|si
+Slovak|sk
+Slovenian|sl
+Somali|so
+Spanish|es
+Sundanese|su
+Swahili|sw
+Swedish|sv
+Tajik|tg
+Tamil|ta
+Telugu|te
+Thai|th
+Turkish|tr
+Ukrainian|uk
+Urdu|ur
+Uzbek|uz
+Vietnamese|vi
+Welsh|cy
+Xhosa|xh
 Yiddish|yi
+Yoruba|yo
+Zulu|zu
 
 # Credits
  
 Made by Lebyy_Dev.
-<br>
-[Fighter for Justice 2.0#6693](https://translate-api.ml) For making the translations possible.
 
 
 # Enjoying SmartestChatBot?
 Consider donating! 
 
-<a href="https://www.patreon.com/Lebyy">
-  <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
-</a>
 <a href="https://www.buymeacoffee.com/lebyydev" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
 <a href='https://ko-fi.com/N4N04B26C' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi3.png?v=2' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
 

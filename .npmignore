@@ -4,3 +4,6 @@ package-lock.json
 .gitignore
 node_modules
 .jsdoc.json
+.eslintrc.js
+.prettierrc
+.github
