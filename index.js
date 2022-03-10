@@ -218,7 +218,7 @@ class Client {
             if (!ops.message) reject("No message was provided");
             for (const key in ops) {
                 if (key !== "user" && ops[key] && typeof ops[key] !== "string") reject(`${key} must be a string!`);
-                else if (key === "user" && typeof ops[key] !== "number") reject(`${key} must be a number!`);
+                else if (key === "user" && (typeof ops[key] !== "number" || typeof ops[key] !== "bigint")) reject(`${key} must be a number/bigint!`);
             }
             
             if (language) {
