@@ -55,7 +55,7 @@ class Client {
      * @param {string} ops.message - The message
      * @param {string} ops.name - The name of the bot
      * @param {string} ops.owner - The owner of the bot
-     * @param {string} ops.user - The user id
+     * @param {string | number | bigint} ops.user - The user id
      * @param {string} ops.language - The language of the returned reponse
      * @param {string} ops.age - The age of the bot.
      * @param {string} ops.birthyear - The birth year of the bot.
@@ -218,9 +218,9 @@ class Client {
             if (!ops.message) reject("No message was provided");
             for (const key in ops) {
                 if (key !== "user" && ops[key] && typeof ops[key] !== "string") reject(`${key} must be a string!`);
-                else if (key === "user" && (typeof ops[key] !== "number" || typeof ops[key] !== "bigint")) reject(`${key} must be a number/bigint!`);
+                else if (key === "user" && (typeof ops[key] !== "number" || typeof ops[key] !== "bigint" || typeof ops[key] !== "string")) reject(`${key} must be a number / bigint / string!`);
             }
-            
+
             if (language) {
                 if (!translatte.languages.isSupported(language)) reject(`Language ${language} is not supported!\nCurrently supported languages are:\n\n${JSON.stringify(translatte.languages)}`);
             }

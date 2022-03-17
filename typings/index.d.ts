@@ -17,7 +17,7 @@ export class Client {
      * @param {string} ops.message - The message
      * @param {string} ops.name - The name of the bot
      * @param {string} ops.owner - The owner of the bot
-     * @param {string} ops.user - The user id
+     * @param {string | number | bigint} ops.user - The user id
      * @param {string} ops.language - The language of the returned reponse
      * @param {string} ops.age - The age of the bot.
      * @param {string} ops.birthyear - The birth year of the bot.
@@ -99,7 +99,7 @@ export class Client {
             message: string;
             name: string;
             master: string;
-            user: number;
+            user: string | number | bigint;
             age: string;
             birthyear: string;
             vocabulary: string;
@@ -173,8 +173,8 @@ export class Client {
             wear: string;
             wechat: string;
         },
-        language: string,
-        translatteoptions: object
+        language?: string,
+        translatteoptions?: object
     ): Promise<string>;
 }
 export declare const version: any;
