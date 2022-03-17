@@ -1,6 +1,6 @@
 {
   "name": "smartestchatbot",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "A very lightweight and simple artificial intelligence chatbot package with multiple language support!",
   "main": "index.js",
   "types": "typings/index.d.ts",
@@ -37,7 +37,8 @@
   },
   "homepage": "https://github.com/Lebyy/SmartestChatBot#readme",
   "dependencies": {
-    "superagent": "^6.1.0"
+    "superagent": "^7.1.1",
+    "translatte": "^3.0.1"
   },
   "devDependencies": {
     "jsdoc-skyceil": "^2.0.0"
