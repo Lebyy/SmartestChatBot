@@ -3,6 +3,96 @@
  *
  * @class Client
  */
+export interface ChatOptions {
+    message?: string;
+    name?: string;
+    master?: string;
+    user?: string | number | bigint;
+    age?: string;
+    birthyear?: string;
+    vocabulary?: string;
+    baseballteam?: string;
+    birthdate?: string;
+    birthday?: string;
+    birthplace?: string;
+    build?: string;
+    celebrities?: string;
+    celebrity?: string;
+    chinesesign?: string;
+    city?: string;
+    class?: string;
+    company?: string;
+    country?: string;
+    email?: string;
+    ethics?: string;
+    etype?: string;
+    family?: string;
+    job?: string;
+    favoriteactor?: string;
+    favoriteactress?: string;
+    favoriteartist?: string;
+    favoriteauthor?: string;
+    favoriteband?: string;
+    favoritebook?: string;
+    favoritecolor?: string;
+    favoritefood?: string;
+    favoritemovie?: string;
+    favoriteopera?: string;
+    favoriteseason?: string;
+    favoriteshow?: string;
+    favoritesong?: string;
+    favoritesport?: string;
+    favoritesubject?: string;
+    footballteam?: string;
+    forfun?: string;
+    friend?: string;
+    friends?: string;
+    gender?: string;
+    genus?: string;
+    hockeyteam?: string;
+    kindmusic?: string;
+    language?: string;
+    location?: string;
+    ndevelopers?: string;
+    nclients?: string;
+    orientation?: string;
+    os?: string;
+    party?: string;
+    phylum?: string;
+    physicallocation?: string;
+    president?: string;
+    religion?: string;
+    scchinesesign?: string;
+    sccity?: string;
+    sccompany?: string;
+    sccountry?: string;
+    scfavoritecolor?: string;
+    scfavoritefood?: string;
+    scgender?: string;
+    scmaster?: string;
+    scnationality?: string;
+    scsign?: string;
+    scspecies?: string;
+    sign?: string;
+    species?: string;
+    state?: string;
+    totalclients?: string;
+    version?: string;
+    wear?: string;
+    wechat?: string;
+}
+
+export interface TranslateOptions {
+    from?: string,
+    to?: string,
+    raw?: boolean,
+    agents?: string[],
+    proxies?: string[],
+    tld?: string,
+    client?: "t" | "gtx",
+    priority?: string[],
+    services?: {"google_v3": { "project-id": string, "token": string } } | { "microsoft_v3": { "key": string, "location": "global" } } | { "yandex_v1": { "key": string } } | {"yandex_v2": {"key": string}}
+}
 export class Client {
     /**
      * The function to fetch respone from the Affiliate+ API
@@ -95,86 +185,9 @@ export class Client {
      * @returns {Promise<string>} The message returned by the chatbot
      **/
     chat(
-        ops?: {
-            message: string;
-            name: string;
-            master: string;
-            user: string | number | bigint;
-            age: string;
-            birthyear: string;
-            vocabulary: string;
-            baseballteam: string;
-            birthdate: string;
-            birthday: string;
-            birthplace: string;
-            build: string;
-            celebrities: string;
-            celebrity: string;
-            chinesesign: string;
-            city: string;
-            class: string;
-            company: string;
-            country: string;
-            email: string;
-            ethics: string;
-            etype: string;
-            family: string;
-            job: string;
-            favoriteactor: string;
-            favoriteactress: string;
-            favoriteartist: string;
-            favoriteauthor: string;
-            favoriteband: string;
-            favoritebook: string;
-            favoritecolor: string;
-            favoritefood: string;
-            favoritemovie: string;
-            favoriteopera: string;
-            favoriteseason: string;
-            favoriteshow: string;
-            favoritesong: string;
-            favoritesport: string;
-            favoritesubject: string;
-            footballteam: string;
-            forfun: string;
-            friend: string;
-            friends: string;
-            gender: string;
-            genus: string;
-            hockeyteam: string;
-            kindmusic: string;
-            language: string;
-            location: string;
-            ndevelopers: string;
-            nclients: string;
-            orientation: string;
-            os: string;
-            party: string;
-            phylum: string;
-            physicallocation: string;
-            president: string;
-            religion: string;
-            scchinesesign: string;
-            sccity: string;
-            sccompany: string;
-            sccountry: string;
-            scfavoritecolor: string;
-            scfavoritefood: string;
-            scgender: string;
-            scmaster: string;
-            scnationality: string;
-            scsign: string;
-            scspecies: string;
-            sign: string;
-            species: string;
-            state: string;
-            totalclients: string;
-            version: string;
-            wear: string;
-            wechat: string;
-        },
+        ops?: ChatOptions,
         language?: string,
-        translatteoptions?: object
+        translatteoptions?: TranslateOptions
     ): Promise<string>;
 }
 export declare const version: any;
