@@ -16,7 +16,7 @@ export class Client {
      * @param {object} ops - The options
      * @param {string} ops.message - The message
      * @param {string} ops.name - The name of the bot
-     * @param {string} ops.owner - The owner of the bot
+     * @param {string} ops.master - The master of the bot
      * @param {string | number | bigint} ops.user - The user id
      * @param {string} ops.language - The language of the returned reponse
      * @param {string} ops.age - The age of the bot.
