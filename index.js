@@ -8,12 +8,13 @@ const superagent = require("superagent");
  */
 class Client {
     constructor(token) {
+        if (!token) throw new Error("No token provided!");
+        
         /**
          * The token of the API
          * @type {string}
          */
         this.token = token;
-        if (!token) throw new Error("No token provided!");
 
         /**
          * The function to fetch respone from the Lebyy API
