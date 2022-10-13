@@ -13,6 +13,11 @@ This package is just for Entertainment Purpose.
 ### 📝 [Example Discord Bot](https://github.com/Lebyy/SmartestChatBot-Example)
 #
 
+#
+## ❓ How to obtain an API Token?
+> **You can visit [api.lebyy.me/dashboard](https://api.lebyy.me/dashboard) to obtain an API Token.**
+#
+
 # Quick Example
  
 **Javascript:**
@@ -20,7 +25,7 @@ This package is just for Entertainment Purpose.
 // Importing The Package
 const smartestchatbot = require('smartestchatbot');
 
-const client = new smartestchatbot.Client();
+const client = new smartestchatbot.Client("API_TOKEN");
 
 client.chat({message:"Hello, How are you?", name:"SmartestChatbot", owner:"CoolOwnerName", user: CoolUniqueUserId-In-NumberType}, "CoolLanguage").then(reply => {
 console.log(reply);

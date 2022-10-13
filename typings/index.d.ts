@@ -4,83 +4,96 @@
  * @class Client
  */
 export interface ChatOptions {
-    message?: string;
+    message: string;
+    user?: number;
     name?: string;
     master?: string;
-    user?: string | number | bigint;
     age?: string;
-    birthyear?: string;
-    vocabulary?: string;
-    baseballteam?: string;
-    birthdate?: string;
+    friends?: string;
+    botmaster?: string;
+    boyfriend?: string;
+    genus?: string;
+    size?: string;
+    species?: string;
+    location?: string;
+    order?: string;
     birthday?: string;
-    birthplace?: string;
-    build?: string;
-    celebrities?: string;
-    celebrity?: string;
-    chinesesign?: string;
-    city?: string;
-    class?: string;
-    company?: string;
+    kingdom?: string;
+    gender?: string;
+    favoritefood?: string;
+    emotions?: string;
+    mother?: string;
+    state?: string;
+    nationality?: string;
     country?: string;
-    email?: string;
-    ethics?: string;
-    etype?: string;
+    city?: string;
+    phylum?: string;
+    domain?: string;
     family?: string;
+    vocabulary?: string;
+    class?: string;
+    email?: string;
+    kindmusic?: string;
+    favoritemovie?: string;
+    language?: string;
     job?: string;
+    birthplace?: string;
+    religion?: string;
+    party?: string;
+    celebrities?: string;
+    arch?: string;
+    version?: string;
+    talkabout?: string;
+    website?: string;
+    favoritebook?: string;
+    favoritesport?: string;
+    favoritesong?: string;
+    hockeyteam?: string;
+    favoritecolor?: string;
+    favoriteshow?: string;
+    favoriteopera?: string;
     favoriteactor?: string;
+    favoritetea?: string;
     favoriteactress?: string;
+    favoriteoccupation?: string;
+    favoriteseason?: string;
     favoriteartist?: string;
     favoriteauthor?: string;
     favoriteband?: string;
-    favoritebook?: string;
-    favoritecolor?: string;
-    favoritefood?: string;
-    favoritemovie?: string;
-    favoriteopera?: string;
-    favoriteseason?: string;
-    favoriteshow?: string;
-    favoritesong?: string;
-    favoritesport?: string;
+    favoritephilosopher?: string;
     favoritesubject?: string;
-    footballteam?: string;
     forfun?: string;
-    friend?: string;
-    friends?: string;
-    gender?: string;
-    genus?: string;
-    hockeyteam?: string;
-    kindmusic?: string;
-    language?: string;
-    location?: string;
+    build?: string;
+    etype?: string;
+    sign?: string;
+    looklike?: string;
+    wear?: string;
+    os?: string;
+    question?: string;
+    dailyclients?: string;
+    nclients?: string;
+    totalclients?: string;
+    birthdate?: string;
     ndevelopers?: string;
+    memory?: number;
+    alignment?: string;
+    celebrity?: string;
+    favoritequestion?: string;
+    feelings?: string;
+    footballteam?: string;
+    friend?: string;
+    girlfriend?: string;
+    hair?: string;
+    hourlyqueries?: string;
+    maxclients?: string;
     nclients?: string;
     orientation?: string;
-    os?: string;
-    party?: string;
-    phylum?: string;
-    physicallocation?: string;
     president?: string;
-    religion?: string;
-    scchinesesign?: string;
-    sccity?: string;
-    sccompany?: string;
-    sccountry?: string;
-    scfavoritecolor?: string;
-    scfavoritefood?: string;
-    scgender?: string;
-    scmaster?: string;
-    scnationality?: string;
-    scsign?: string;
-    scspecies?: string;
-    sign?: string;
-    species?: string;
-    state?: string;
-    totalclients?: string;
-    version?: string;
-    wear?: string;
-    wechat?: string;
+    richness?: string;
+    ethics?: string;
+    birthyear?: string;
 }
+
 
 export interface TranslateOptions {
     from?: string,
@@ -93,9 +106,10 @@ export interface TranslateOptions {
     priority?: string[],
     services?: {"google_v3": { "project-id": string, "token": string } } | { "microsoft_v3": { "key": string, "location": "global" } } | { "yandex_v1": { "key": string } } | {"yandex_v2": {"key": string}}
 }
+
 export class Client {
     /**
-     * The function to fetch respone from the Affiliate+ API
+     * The function to fetch respone from the Lebyy API
      * @type {Function}
      * @ignore
      * @private
@@ -105,89 +119,96 @@ export class Client {
     /**
      * @param {object} ops - The options
      * @param {string} ops.message - The message
-     * @param {string} ops.name - The name of the bot
-     * @param {string} ops.master - The master of the bot
      * @param {string | number | bigint} ops.user - The user id
-     * @param {string} ops.language - The language of the returned reponse
-     * @param {string} ops.age - The age of the bot.
-     * @param {string} ops.birthyear - The birth year of the bot.
-     * @param {string} ops.vocabulary - The vocabulary count of the bot.
-     * @param {string} ops.baseballteam - The baseball team of the bot.
-     * @param {string} ops.birthdate - The birth date of the bot.
-     * @param {string} ops.birthday - The birthday of the bot.
-     * @param {string} ops.birthplace - The birthplace of the bot.
-     * @param {string} ops.build - The build version of the bot.
-     * @param {string} ops.celebrities - The celebrities of the bot.
-     * @param {string} ops.chinesesign - The chinese sign of the bot.
-     * @param {string} ops.city - The city of the bot.
-     * @param {string} ops.class - The class of the bot.
-     * @param {string} ops.company - The company of the bot.
-     * @param {string} ops.country - The country of the bot.
-     * @param {string} ops.email - The email of the bot.
-     * @param {string} ops.ethics - The ethics of the bot.
-     * @param {string} ops.etype - The etype of the bot.
-     * @param {string} ops.family - The family of the bot.
-     * @param {string} ops.job - The job of the bot.
-     * @param {string} ops.favoriteactor - The favorite actor of the bot.
-     * @param {string} ops.favoriteactress - The favorite actress of the bot.
-     * @param {string} ops.favoriteartist - The favorite artist of the bot.
-     * @param {string} ops.favoriteauthor - The favorite author of the bot.
-     * @param {string} ops.favoriteband - The favorite band of the bot.
-     * @param {string} ops.favoritebook - The favorite book of the bot.
-     * @param {string} ops.favoritecolor - The favorite color of the bot.
-     * @param {string} ops.favoritefood - The favorite food of the bot.
-     * @param {string} ops.favoritemovie - The favorite movie of the bot.
-     * @param {string} ops.favoriteopera - The favorite opera of the bot.
-     * @param {string} ops.favoriteseason - The favorite season of the bot.
-     * @param {string} ops.favoriteshow - The favorite show of the bot.
-     * @param {string} ops.favoritesong - The favorite song of the bot.
-     * @param {string} ops.favoritesport - The favorite sport of the bot.
-     * @param {string} ops.favoritesubject - The favorite subject of the bot.
-     * @param {string} ops.footballteam - The football team of the bot.
-     * @param {string} ops.forfun - The forfun activity of the bot.
-     * @param {string} ops.friend - The friend of the bot.
-     * @param {string} ops.friends - The friends of the bot.
-     * @param {string} ops.gender - The gender of the bot.
-     * @param {string} ops.genus - The genus of the bot.
-     * @param {string} ops.hockeyteam - The hockeyteam of the bot.
-     * @param {string} ops.kindmusic - The kindmusic of the bot.
-     * @param {string} ops.language - The language of the bot.
-     * @param {string} ops.location - The location of the bot.
-     * @param {string} ops.ndevelopers - The ndevelopers of the bot.
-     * @param {string} ops.nclients - The nclients of the bot.
-     * @param {string} ops.orientation - The orientation of the bot.
-     * @param {string} ops.os - The os of the bot.
-     * @param {string} ops.party - The party of the bot.
-     * @param {string} ops.phylum - The phylum of the bot.
-     * @param {string} ops.physicallocation - The physicallocation of the bot.
-     * @param {string} ops.president - The president of the bot.
-     * @param {string} ops.religion - The religion of the bot.
-     * @param {string} ops.scchinesesign - The scchinesesign of the bot.
-     * @param {string} ops.sccity - The sccity of the bot.
-     * @param {string} ops.sccompany - The sccompany of the bot.
-     * @param {string} ops.sccountry - The sccountry of the bot.
-     * @param {string} ops.scfavoritecolor - The scfavoritecolor of the bot.
-     * @param {string} ops.scfavoritefood - The scfavoritefood of the bot.
-     * @param {string} ops.scgender - The scgender of the bot.
-     * @param {string} ops.scmaster - The scmaster of the bot.
-     * @param {string} ops.scnationality - The scnationality of the bot.
-     * @param {string} ops.scsign - The scsign of the bot.
-     * @param {string} ops.scspecies - The scspecies of the bot.
-     * @param {string} ops.sign - The sign of the bot.
-     * @param {string} ops.species - The species of the bot.
-     * @param {string} ops.state - The state of the bot.
-     * @param {string} ops.totalclients - The totalclients of the bot.
-     * @param {string} ops.version - The version of the bot.
-     * @param {string} ops.wear - The wear of the bot.
-     * @param {string} ops.wechat - The wechat of the bot.
+     * @param {string} ops.name - The name of the chatbot
+     * @param {string} ops.master - The master of the chatbot
+     * @param {string} ops.age - The age of the chatbot
+     * @param {string} ops.friends - The friends of the chatbot
+     * @param {string} ops.botmaster - The botmaster of the chatbot
+     * @param {string} ops.boyfriend - The boyfriend of the chatbot
+     * @param {string} ops.genus - The genus of the chatbot
+     * @param {string} ops.size - The size of the chatbot
+     * @param {string} ops.species - The species of the chatbot
+     * @param {string} ops.location - The location of the chatbot
+     * @param {string} ops.order - The order of the chatbot
+     * @param {string} ops.birthday - The birthday of the chatbot
+     * @param {string} ops.kingdom - The kingdom of the chatbot
+     * @param {string} ops.gender - The gender of the chatbot
+     * @param {string} ops.favoritefood - The favoritefood of the chatbot
+     * @param {string} ops.emotions - The emotions of the chatbot
+     * @param {string} ops.mother - The mother of the chatbot
+     * @param {string} ops.state - The state of the chatbot
+     * @param {string} ops.nationality - The nationality of the chatbot
+     * @param {string} ops.country - The country of the chatbot
+     * @param {string} ops.city - The city of the chatbot
+     * @param {string} ops.phylum - The phylum of the chatbot
+     * @param {string} ops.domain - The domain of the chatbot
+     * @param {string} ops.family - The family of the chatbot
+     * @param {string} ops.vocabulary - The vocabulary of the chatbot
+     * @param {string} ops.class - The class of the chatbot
+     * @param {string} ops.email - The email of the chatbot
+     * @param {string} ops.kindmusic - The kindmusic of the chatbot
+     * @param {string} ops.favoritemovie - The favoritemovie of the chatbot
+     * @param {string} ops.language - The language spoken by chatbot
+     * @param {string} ops.job - The job of the chatbot
+     * @param {string} ops.birthplace - The birthplace of the chatbot
+     * @param {string} ops.religion - The religion of the chatbot
+     * @param {string} ops.party - The party of the chatbot
+     * @param {string} ops.celebrities - The celebrities of the chatbot
+     * @param {string} ops.arch - The arch of the chatbot
+     * @param {string} ops.version - The version of the chatbot
+     * @param {string} ops.talkabout - The talkabout topic of the chatbot
+     * @param {string} ops.website - The website of the chatbot
+     * @param {string} ops.favoritebook - The favoritebook of the chatbot
+     * @param {string} ops.favoritesport - The favoritesport of the chatbot
+     * @param {string} ops.favoritesong - The favoritesong of the chatbot
+     * @param {string} ops.hockeyteam - The hockeyteam of the chatbot
+     * @param {string} ops.favoritecolor - The favoritecolor of the chatbot
+     * @param {string} ops.favoriteshow - The favoriteshow of the chatbot
+     * @param {string} ops.favoriteopera - The favoriteopera of the chatbot
+     * @param {string} ops.favoriteactor - The favoriteactor of the chatbot
+     * @param {string} ops.favoritetea - The favoritetea of the chatbot
+     * @param {string} ops.favoriteactress - The favoriteactress of the chatbot
+     * @param {string} ops.favoriteoccupation - The favoriteoccupation of the chatbot
+     * @param {string} ops.favoriteseason - The favoriteseason of the chatbot
+     * @param {string} ops.favoriteartist - The favoriteartist of the chatbot
+     * @param {string} ops.favoriteauthor - The favoriteauthor of the chatbot
+     * @param {string} ops.favoriteband - The favoriteband of the chatbot
+     * @param {string} ops.favoritephilosopher - The favoritephilosopher of the chatbot
+     * @param {string} ops.favoritesubject - The favoritesubject of the chatbot
+     * @param {string} ops.forfun - The forfun activity of the chatbot
+     * @param {string} ops.build - The build of the chatbot
+     * @param {string} ops.etype - The etype of the chatbot
+     * @param {string} ops.sign - The sign of the chatbot
+     * @param {string} ops.looklike - The looklike of the chatbot
+     * @param {string} ops.wear - The wear of the chatbot
+     * @param {string} ops.os - The os of the chatbot
+     * @param {string} ops.question - The question of the chatbot
+     * @param {string} ops.dailyclients - The dailyclients of the chatbot
+     * @param {string} ops.nclients - The nclients of the chatbot
+     * @param {string} ops.totalclients - The totalclients of the chatbot
+     * @param {string} ops.birthdate - The birthdate of the chatbot
+     * @param {string} ops.ndevelopers - The ndevelopers of the chatbot
+     * @param {number} ops.memory - The memory of the chatbot
+     * @param {string} ops.alignment - The alignment of the chatbot
+     * @param {string} ops.celebrity - The celebrity of the chatbot
+     * @param {string} ops.favoritequestion - The favoritequestion of the chatbot
+     * @param {string} ops.feelings - The feelings of the chatbot
+     * @param {string} ops.footballteam - The footballteam of the chatbot
+     * @param {string} ops.friend - The friend of the chatbot
+     * @param {string} ops.girlfriend - The girlfriend of the chatbot
+     * @param {string} ops.hair - The hair of the chatbot
+     * @param {string} ops.hourlyqueries - The hourlyqueries of the chatbot
+     * @param {string} ops.maxclients - The maxclients of the chatbot
+     * @param {string} ops.orientation - The orientation of the chatbot
+     * @param {string} ops.president - The president of the chatbot
+     * @param {string} ops.richness - The richness of the chatbot
+     * @param {string} ops.ethics - The ethics of the chatbot
+     * @param {string} ops.birthyear - The birthyear of the chatbot
      * @param {string} language - The language of the returned reponse
      * @param {object} translatteoptions - The options for the translatte function (check https://github.com/extensionsapp/translatte#options)
      * @returns {Promise<string>} The message returned by the chatbot
      **/
-    chat(
-        ops?: ChatOptions,
-        language?: string,
-        translatteoptions?: TranslateOptions
-    ): Promise<string>;
+    chat(ops?: ChatOptions, language?: string, translatteoptions?: TranslateOptions): Promise<string>;
 }
 export declare const version: any;
