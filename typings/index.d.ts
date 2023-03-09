@@ -108,6 +108,7 @@ export interface TranslateOptions {
 }
 
 export class Client {
+    constructor(token: string);
     /**
      * The function to fetch respone from the Lebyy API
      * @type {Function}
